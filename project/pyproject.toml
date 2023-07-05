@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "project"
+version = "0.1.0"
+description = ""
+authors = ["TEGG <torturegg@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.99.1"
+uvicorn = "^0.22.0"
+pyjwt = "^2.7.0"
+python-decouple = "^3.8"
+pytest = "^7.4.0"
+passlib = "^1.7.4"
+requests = "^2.31.0"
+bcrypt = "^4.0.1"
+email-validator = "^2.0.0.post2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

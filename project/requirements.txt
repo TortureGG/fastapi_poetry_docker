@@ -1,0 +1,9 @@
+fastapi
+uvicorn 
+pyjwt
+python-decouple
+pytest
+passlib
+requests
+bcrypt
+email-validator
