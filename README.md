@@ -12,19 +12,18 @@
         git clone https://github.com/TortureGG/fastapi_poetry_docker.git</p>
 
 3. Запуск через Docker запускаем Dockerfile:
+   Создаем Image:
 
-Создаем Image:
-    
-    docker build -t image .
-    
-Создаем Container с портом 80:
-    
-    docker run -p 80:80 image
-    
-Переходим к Swagger по ссылке и можем взаимодействовать с сервисом
+           docker build -t image .
 
-    http://localhost:80/docs
-    http://127.0.0.1:80/docs
+   Создаем Container с портом 80:
+    
+            docker run -p 80:80 image
+    
+   Переходим к Swagger по ссылке и можем взаимодействовать с сервисом
+
+            http://localhost:80/docs
+            http://127.0.0.1:80/docs
 
 3. Запуск  можем через Poetry (необходимо предварительно установиться pip install poetry и указать путь), переходим в папку project, где находится файил с зависимостями pyproject.toml
 
@@ -34,13 +33,14 @@
         http://localhost:80/docs
         http://127.0.0.1:80/docs
 
-5. Тесты находятся в папке project/pytest/tests.py но предварительно нужно 
-запустить REST-сервис, запускать их будетм командой:
+4. Тесты находятся в папке project/pytest/tests.py но предварительно нужно запустить REST-сервис, запускать их будетм командой:
 
-        poetry run pytest pytest/tests.py 
+           poetry run pytest pytest/tests.py 
 
 
-        Задание:
+
+Задание:
+        
         Реализуйте REST-сервис просмотра текущей зарплаты и даты следующего
         повышения. Из-за того, что такие данные очень важны и критичны, каждый
         сотрудник может видеть только свою сумму. Для обеспечения безопасности, вам
