@@ -9,7 +9,7 @@
 
 1. Клонируем проект с репозитория  
 
-        git clone https://github.com/TortureGG/fastapi_poetry_docker.git</p>
+           git clone https://github.com/TortureGG/fastapi_poetry_docker.git</p>
 
 3. Запуск через Docker запускаем Dockerfile:
    Создаем Image:
@@ -27,11 +27,11 @@
 
 3. Запуск  можем через Poetry (необходимо предварительно установиться pip install poetry и указать путь), переходим в папку project, где находится файил с зависимостями pyproject.toml
 
-        cd project
-        poetry install
-        poetry run python main.py
-        http://localhost:80/docs
-        http://127.0.0.1:80/docs
+            cd project
+            poetry install
+            poetry run python main.py
+            http://localhost:80/docs
+            http://127.0.0.1:80/docs
 
 4. Тесты находятся в папке project/pytest/tests.py но предварительно нужно запустить REST-сервис, запускать их будетм командой:
 
